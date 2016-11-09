@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.sham.a11102016.MainActivity">
+
+    <Button
+        android:background="@drawable/button_states_hihatclose"
+        android:id="@+id/HiHatClose"
+        android:onClick="playHiHatClose"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_states_hihatopen"
+        android:id="@+id/HiHatOpen"
+        android:onClick="playHiHatOpen"
+        android:layout_below="@+id/RideCymbal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/button_states_ridecymbal"
+        android:id="@+id/RideCymbal"
+        android:onClick="playRide"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_states_bass1"
+        android:id="@+id/Bass1"
+        android:onClick="playBass1"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/HiHatOpen"
+        android:layout_toStartOf="@+id/HiHatOpen" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/button_states_floor"
+        android:id="@+id/Floor"
+        android:onClick="playFloor"
+        android:layout_alignBottom="@+id/HiHatOpen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_states_crash2"
+        android:id="@+id/Crash2"
+        android:onClick="playCrash2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Tom2"
+        android:layout_toStartOf="@+id/Tom2"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/button_states_tom3"
+        android:id="@+id/Tom3"
+        android:onClick="playTom3"
+        android:layout_above="@+id/HiHatClose"
+        android:layout_toRightOf="@+id/Floor"
+        android:layout_toEndOf="@+id/Floor" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_states_splash"
+        android:id="@+id/Splash"
+        android:onClick="playSplash"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Floor"
+        android:layout_toEndOf="@+id/Floor"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_states_crash1"
+        android:id="@+id/Crash1"
+        android:onClick="playCrash1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/RideCymbal"
+        android:layout_toStartOf="@+id/RideCymbal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_states_bass2"
+        android:id="@+id/Bass2"
+        android:onClick="playBass2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Splash"
+        android:layout_alignEnd="@+id/Splash" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_states_snare"
+        android:id="@+id/Snare"
+        android:onClick="playSnare"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:layout_below="@+id/RideCymbal"
+        android:layout_alignLeft="@+id/Splash"
+        android:layout_alignStart="@+id/Splash" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/button_states_tom1"
+        android:id="@+id/Tom1"
+        android:onClick="playTom1"
+        android:layout_above="@+id/HiHatClose"
+        android:layout_toLeftOf="@+id/RideCymbal"
+        android:layout_toStartOf="@+id/RideCymbal" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="@drawable/button_states_tom2"
+        android:id="@+id/Tom2"
+        android:onClick="playTom2"
+        android:layout_above="@+id/Bass1"
+        android:layout_alignLeft="@+id/Snare"
+        android:layout_alignStart="@+id/Snare"
+        android:layout_marginBottom="19dp" />
+
+</RelativeLayout>
